@@ -9,3 +9,12 @@ h1,h2,h3 {
     color: #333333;
 }
 
+#main-header {
+    background-color: rgb(155, 155, 224);
+    color: white; 
+    text-align: center;
+    border-bottom: 5 px solid #000000;
+}
+
+
+
