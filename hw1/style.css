@@ -25,5 +25,13 @@ h2,h3 {
     border-bottom: 5 px solid #000000;
 }
 
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse; 
+}
+
+
 
 
