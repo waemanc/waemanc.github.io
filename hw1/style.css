@@ -1,20 +1,25 @@
 body {
     font-family:'Times New Roman', Times, serif;
-    background-color: ;
-    color: ##333333;
+    background-color: antiquewhite;
+    color: black;
 }
 
 h1 {
-    text-align
+    background-color:darkslategrey; 
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
 }
 
-h1,h2,h3 {
+h2,h3 {
     font-family: 'Times New Roman', Times, serif;
-    color: #333333;
+    color: white;
+    background-color:darkslategray;
 }
 
 #main-header {
-    background-color: rgb(155, 155, 224);
+    background-color: rgb(155, 200, 224);
     color: white; 
     text-align: center;
     border-bottom: 5 px solid #000000;
