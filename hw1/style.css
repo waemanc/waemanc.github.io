@@ -53,6 +53,10 @@ th, td {
 ul {
     margin-top: 5px;
     margin-bottom: 25 px;
-    
+
+}
+
+form {
+    max-width: 500 px;
 }
 
