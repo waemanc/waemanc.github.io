@@ -22,7 +22,7 @@ function takeDamage() {
         document.body.style.backgroundColor = "#5a1a1a";
 
         document.querySelector("button").disabled = true;
-        docuemnt.querySelector("button").innerText = "Dead";
+        document.querySelector("button").innerText = "Dead";
     }
 }
 
