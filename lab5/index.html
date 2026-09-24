@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Javascript Example</title>
+        <title>Lab 5</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="player-card">
-            <h2>Player Status</h2>
+        <div id="bank-total">
+            <h2>Bank Total</h2>
 
-            <p>HP: <span id="health-display">100</span></p>
-            <p id="status-message">Ready for Battle!</p>
+            <p>TOTAL MONEY: <span id="money-display">100</span></p>
+            <p id="status-message">Want to deposit or withdraw money?</p>
 
-            <button onclick="takeDamage()">Take 30 Damage</button>
+            <button onclick="addMoney()">Deposit $25</button>
+            <button onclick="subtractMoney()">Withdraw $25</button>
         </div>
 
         <script src="script.js"></script>
