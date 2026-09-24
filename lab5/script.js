@@ -1,9 +1,9 @@
 let bankTotal = 100;
-const addMoney = 25;
-const subtractMoney = 25;
+const add = 25;
+const sub = 25;
 
 function addMoney() {
-    bankTotal = bankTotal + addMoney;
+    bankTotal = bankTotal + add;
 
     const depositText = document.getElementById("money-display");
     const statusText = document.getElementById("status-message");
@@ -17,7 +17,7 @@ function addMoney() {
 }
 
 function subtractMoney() {
-    bankTotal = bankTotal - subtractMoney;
+    bankTotal = bankTotal - sub;
 
     const depositText = document.getElementById("money-display");
     const statusText = document.getElementById("status-message");
