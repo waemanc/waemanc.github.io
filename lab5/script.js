@@ -5,7 +5,7 @@ const subtractMoney = 25;
 function addMoney() {
     bankTotal = bankTotal + addMoney;
 
-    const depositText = document. getElementById("money-display");
+    const depositText = document.getElementById("money-display");
     const statusText = document.getElementById("status-message");
 
     if(bankTotal > 0)
@@ -19,18 +19,18 @@ function addMoney() {
 function subtractMoney() {
     bankTotal = bankTotal - subtractMoney;
 
-    const depositText = document. getElementById("money-display");
+    const depositText = document.getElementById("money-display");
     const statusText = document.getElementById("status-message");
 
     if(bankTotal > 0)
     {
-        depositTextText.innerText = bankTotal;
+        depositText.innerText = bankTotal;
         statusText.innerText = "Withdrew Money!";
     }
 
     else
     {
-        depositTextText.innerText = 0;
+        depositText.innerText = 0;
         statusText.innerText = "Uh Oh Bankrupt";
         statusText.style.color = "#c91804";
         statusText.style.fontWeight = "bold";
