@@ -18,6 +18,12 @@ function addMoney() {
         document.getElementById("withdraw").innerText = "Withdraw $25";
     }
 
+    bankTotal = bankTotal + add;
+
+    const balanceText = document.getElementbyId ("money-display")
+
+    balanceText.innerText = bankTotal
+
 }
 
 function subtractMoney() {
