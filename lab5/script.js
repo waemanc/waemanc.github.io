@@ -12,6 +12,10 @@ function addMoney() {
     {
         depositText.innerText = bankTotal;
         statusText.innerText = "Deposited Money!";
+
+        document.body.style.backgroundColor = "#132359";
+        document.getElementById("withdraw").disabled = false;
+        document.getElementById("withdraw").innerText = "Withdraw $25";
     }
 
 }
@@ -38,6 +42,6 @@ function subtractMoney() {
         document.body.style.backgroundColor = "#5a1a1a";
 
         document.querySelector("button").disabled = true;
-        document.querySelector("button").innerText = "Bankrupt";
+        document.querySelector("button").innerText = "No";
     }
 }
