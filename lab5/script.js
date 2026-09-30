@@ -18,9 +18,7 @@ function addMoney() {
         document.getElementById("withdraw").innerText = "Withdraw $25";
     }
 
-    bankTotal = bankTotal + add;
-
-    const balanceText = document.getElementbyId ("money-display")
+    const balanceText = document.getElementById ("money-display")
 
     balanceText.innerText = bankTotal
 
@@ -47,7 +45,7 @@ function subtractMoney() {
 
         document.body.style.backgroundColor = "#5a1a1a";
 
-        document.querySelector("button").disabled = true;
-        document.querySelector("button").innerText = "No";
+        document.getElementById("button").disabled = true;
+        document.getElementById("button").innerText = "No";
     }
 }
