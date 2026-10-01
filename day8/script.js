@@ -3,7 +3,7 @@
 //Arrays are created using []
 
 const contents = [
-    "Health Potion".
+    "Health Potion",
     "Sword",
     "Shield",
     "Magic Book",
