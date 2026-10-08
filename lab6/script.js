@@ -1,6 +1,4 @@
-function showContent(section) {
-
-const content = document.querySelector(".content");
+function showContent(section) { const content = document.querySelector(".content");
 
 if (section === "classes") { content.innerHTML = <h2>Classes</h2> <p> The University of South Carolina offers a wide variety of classes and courses that students can take to complete their degree requirements and explore different areas of study. </p> ; }
 
