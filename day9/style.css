@@ -56,12 +56,10 @@ button {
     margin-left: 5px;
 }
 
-/* Button when you hover over it */
 button:hover {
     background-color: #73000a;
 }
 
-/* Heading */
 h2 {
     font-size: 32px;
     margin-bottom: 10px;
