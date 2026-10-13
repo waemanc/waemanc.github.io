@@ -28,4 +28,7 @@ function updateScreen()
 {
     document.getElementById("score-display").innerText = linesofCode + " lines of code";
 
+    document.getElementById("power-display").innerText = clickPower; 
+    document.getElementById("cost-display").innerText = upgradeCost;
+    
 }
