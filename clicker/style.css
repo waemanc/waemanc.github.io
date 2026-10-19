@@ -32,3 +32,22 @@ body {
     padding: 20px;
     border-radius: 8px;
 }
+
+#upgrade-button, #intern-button {
+    background-color: steelblue;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkcyan;
+}
+
+button:active {
+    transform: translateY(3px);
+}
