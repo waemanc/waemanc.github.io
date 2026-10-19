@@ -7,6 +7,12 @@ let upgradeCost = 50;
 let interns = 0;
 let internCost = 100; 
 
+let gamingKeyboards = 0;
+let gamingKeyboardCost = 500;
+
+let codeWizards = 0;
+let codeWizardCost = 1000;
+
 function writeCode() 
 {
     linesofCode = linesofCode + clickPower; 
@@ -21,6 +27,17 @@ function buyKeyboard()
         clickPower = clickPower + 1;
         upgradeCost = upgradeCost * 1.5;
         updateScreen();
+    }
+}
+
+function buyGamingKeyboard()
+{
+    if(linesofCode >= gamingKeyboardCost)
+    {
+    gamingKeyboards = gamingKeyboards + 1;
+    clickPower = clickPower + 5;
+    gamingKeyboardCost = Math.ceil(gamingKeyboardCost *1.5);
+    updateSCreen();
     }
 }
 
