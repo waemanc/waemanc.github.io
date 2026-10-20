@@ -34,10 +34,11 @@ function buyGamingKeyboard()
 {
     if(linesofCode >= gamingKeyboardCost)
     {
-    gamingKeyboards = gamingKeyboards + 1;
-    clickPower = clickPower + 5;
-    gamingKeyboardCost = Math.ceil(gamingKeyboardCost * 1.5);
-    updateSCreen();
+        linesofCode = linesofCode - gamingKeyboardCost;
+        gamingKeyboards = gamingKeyboards + 1;
+        clickPower = clickPower + 5;
+        gamingKeyboardCost = Math.ceil(gamingKeyboardCost * 1.5);
+        updateScreen();
     }
 }
 
