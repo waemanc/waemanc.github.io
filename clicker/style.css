@@ -33,7 +33,7 @@ body {
     border-radius: 8px;
 }
 
-#upgrade-button, #intern-button {
+#upgrade-button, #intern-button, #gaming-keyboard-button, #wizard-button {
     background-color: steelblue;
     color: white;
     font-size: 16px;
