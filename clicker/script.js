@@ -36,7 +36,7 @@ function buyGamingKeyboard()
     {
     gamingKeyboards = gamingKeyboards + 1;
     clickPower = clickPower + 5;
-    gamingKeyboardCost = Math.ceil(gamingKeyboardCost *1.5);
+    gamingKeyboardCost = Math.ceil(gamingKeyboardCost * 1.5);
     updateSCreen();
     }
 }
@@ -52,6 +52,17 @@ function buyIntern()
     }
 }
 
+function buyCodeWizard()
+{
+    if(linesofCode >= codeWizardCost)
+    {
+        linesofCode = linesofCode - codeWizardCost;
+        codeWizards = codeWizards + 1;
+        codeWizardCost = Math.ceil(codeWizardCost * 1.5);
+        updateScreen();
+    }
+}
+
 function updateScreen()
 {
     document.getElementById("score-display").innerText = linesofCode + " lines of code";
@@ -61,14 +72,19 @@ function updateScreen()
 
     document.getElementById("intern-display").innerText = interns;
     document.getElementById("intern-display-cost").innerText = internCost;
+
+    document.getElementById("gaming-keyboard-cost").innerText = gamingKeyboardCost;
+    document.getElementById("gaming-keyboard-display").innerText = gamingKeyboards;
+
+    document.getElementById("wizard-cost").innerText = codeWizardCost;
+    document.getElementById("wizard-display").innerText = codeWizards
 }
 
+
 setInterval(function() {
-    if(interns > 0)
+    if(interns > 0 || codeWizards > 0)
     {
-        linesofCode = linesofCode + interns;
+        linesofCode = linesofCode + interns + (codeWizards * 10);
         updateScreen();
     }
-}, 
-1000
-);
+}, 1000);
