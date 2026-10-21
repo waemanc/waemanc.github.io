@@ -8,10 +8,10 @@ let interns = 0;
 let internCost = 100; 
 
 let gamingKeyboards = 0;
-let gamingKeyboardCost = 500;
+let gamingKeyboardCost = 100;
 
 let codeWizards = 0;
-let codeWizardCost = 1000;
+let codeWizardCost = 200;
 
 function writeCode() 
 {
