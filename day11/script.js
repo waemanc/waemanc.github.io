@@ -17,3 +17,9 @@ function startGame()
     startButton.disabled = true;
     targetElement.style.display = "block";
 }
+
+function countdown()
+{
+    timeLeft--; //timeLeft = timeLeft - 1;
+    timeDisplay.innerText = timeLeft;
+}
