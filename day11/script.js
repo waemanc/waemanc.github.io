@@ -16,6 +16,8 @@ function startGame()
 
     startButton.disabled = true;
     targetElement.style.display = "block";
+
+    timerId = setInterval(countdown, 1000);
 }
 
 function countdown()
@@ -28,5 +30,5 @@ function hitTarget()
 {
     score++; //score = score +1;
     scoreDisplay.innerText = score;
-    
+
 }
