@@ -52,7 +52,7 @@ function endGame()
     clearInterval(timerId);
 
     targetElement.style.display = "none";
-    startButton.disabeled = false;
+    startButton.disabled = false;
 
     alert("*WHISTLE* You scored: " + score);
 }
