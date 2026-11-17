@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Book Journal - Want to Read</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div id="journal-container">
+
+            <header>
+                <h1>Welcome to Your Personal Bookshelf!</h1>
+
+                <nav>
+                    <a href="index.html">Want to Read</a>
+                    <a href="reading.html">Currently Reading</a>
+                    <a href="timer.html">Reading Timer</a>
+                    <a href="finished.html">Finished Books</a>
+                </nav>
+            </header>
+
+            <main>
+                <h2>Books I Want to Read...</h2>
+
+                <div id="add-book">
+                    <input type="text" id="book-title" placeholder="Book title...">
+                    <input type="text" id="book-author" placeholder="Author...">
+
+                    <button onclick="addBook()">Add</button>
+                </div>
+
+                <div id="book-list">
+                    <!-- Books will appear here using JavaScript -->
+                </div>
+
+            </main>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
