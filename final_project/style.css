@@ -15,3 +15,48 @@ body {
     border-radius: 12px;
     box-shadow: 0 8px 16px lightgray;
 }
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #3D5947;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #3D5947;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #3D5947;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #A8BFA0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #243D2F;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #829E7B;
+    color: white;
+}
