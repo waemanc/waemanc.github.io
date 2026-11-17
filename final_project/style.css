@@ -77,3 +77,95 @@ input {
 input:focus {
     outline: 2px solid #A8BFA0;
 }
+button {
+    background-color: #A8BFA0;
+    color: #243D2F;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #829E7B;
+    color: white;
+}
+
+button:active {
+    transform: translateY(3px);
+}
+
+button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+/* Page 1: Want to Read */
+
+#add-book {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #F5F7F2;
+    border-radius: 8px;
+}
+
+#book-list {
+    background-color: #F5F7F2;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+    min-height: 200px;
+    text-align: left;
+}
+
+/* Page 2: Currently Reading */
+
+#reading-list {
+    background-color: #F5F7F2;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+    min-height: 200px;
+}
+
+.progress-container {
+    background-color: lightgray;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #829E7B;
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Page 3: Reading Timer */
+
+#timer-container {
+    background-color: #F5F7F2;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px lightgray;
+}
+
+#time-display {
+    font-size: 70px;
+    color: #3D5947;
+    margin: 30px 0;
+}
+
+#timer-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #829E7B;
+}
