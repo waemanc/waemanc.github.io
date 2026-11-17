@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Book Journal - Reading Timer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="journal-container">
+
+            <header>
+                <h1>Welcome to Your Personal Bookshelf!</h1>
+
+                <nav>
+                    <a href="index.html">Want to Read</a>
+                    <a href="reading.html">Currently Reading</a>
+                    <a href="timer.html">Reading Timer</a>
+                    <a href="finished.html">Finished Books</a>
+                </nav>
+            </header>
+
+            <main>
+                <h2>Daily Reading Timer</h2>
+
+                <p>Make time for a little reading every day!</p>
+                <p>Try to read for at least 15 minutes today!</p>
+
+                <div id="timer-container">
+                    <h2 id="time-display">15:00</h2>
+
+                    <button id="start-btn" onclick="startTimer()">Start</button>
+                    <button id="pause-btn" onclick="pauseTimer()">Pause</button>
+                    <button id="reset-btn" onclick="resetTimer()">Reset</button>
+                </div>
+
+                <p id="timer-message">You got this! Happy reading!</p>
+
+            </main>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
