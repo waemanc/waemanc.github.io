@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Book Journal - Finished Books</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="journal-container">
+
+            <header>
+                <h1>Welcome to Your Personal Bookshelf!</h1>
+
+                <nav>
+                    <a href="index.html">Want to Read</a>
+                    <a href="reading.html">Currently Reading</a>
+                    <a href="timer.html">Reading Timer</a>
+                    <a href="finished.html">Finished Books</a>
+                </nav>
+            </header>
+
+            <main>
+                <h2>My Finished Books!</h2>
+
+                <div id="review-container">
+
+                    <h3>Write a Book Review</h3>
+
+                    <input type="text" id="finished-title"
+                           placeholder="Book title...">
+
+                    <h3>My Rating</h3>
+
+                    <div id="star-rating">
+                        <button onclick="rateBook(1)">☆</button>
+                        <button onclick="rateBook(2)">☆</button>
+                        <button onclick="rateBook(3)">☆</button>
+                        <button onclick="rateBook(4)">☆</button>
+                        <button onclick="rateBook(5)">☆</button>
+                    </div>
+
+                    <p>Rating: <span id="rating-display">0</span>/5</p>
+
+                    <h3>How did this book make you feel?</h3>
+
+                    <div id="emoji-rating">
+                        <button onclick="chooseEmoji('😍')">😍</button>
+                        <button onclick="chooseEmoji('🥹')">🥹</button>
+                        <button onclick="chooseEmoji('😭')">😭</button>
+                        <button onclick="chooseEmoji('😱')">😱</button>
+                        <button onclick="chooseEmoji('😴')">😴</button>
+                    </div>
+
+                    <p>Selected Emoji: <span id="emoji-display">None</span></p>
+
+                    <h3>My Review</h3>
+
+                    <textarea id="book-review" rows="5"
+                              placeholder="Write your thoughts about this book..."></textarea>
+
+                    <br>
+
+                    <button onclick="saveReview()">Save Review</button>
+
+                </div>
+
+                <div id="finished-list">
+                    <h3>Books I've Finished</h3>
+
+                    <div id="completed-books">
+                        <!-- Finished books will appear here using JavaScript -->
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
