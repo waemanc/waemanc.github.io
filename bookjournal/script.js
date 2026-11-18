@@ -1,5 +1,6 @@
 
 /* Page 1: Want to Read */
+
 const books = [];
 
 function addBook()
@@ -36,8 +37,21 @@ function updateBooks()
     {
         let currentBook = books[i];
 
-        let htmlToInject = "<p>" + currentBook + "</p>";
+        let htmlToInject =
+            "<div class='book-item'>" +
+                "<input type='checkbox'>" +
+                "<span>" + currentBook + "</span>" +
+                "<button disabled>Start Reading</button>" +
+                "<button onclick='deleteBook(" + i + ")'>Delete</button>" +
+            "</div>";
 
         bookList.innerHTML += htmlToInject;
     }
+}
+
+function deleteBook(index)
+{
+    books.splice(index, 1);
+
+    updateBooks();
 }
